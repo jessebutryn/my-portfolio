@@ -192,7 +192,11 @@ h4 {
 }
 
 .project-image {
+  display: flex;
   flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
 }
 
 .project-image img {
@@ -204,19 +208,18 @@ h4 {
 .project-content {
   flex: 1 1 auto;
   padding: 1.25rem;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 /*SKILLS*/
-.ul-skills {
+.skills ul {
   text-align: center;
   padding-left: 0;
 }
 
-.li-skills {
+.skills li {
   display: inline-block;
   margin: 7px;
   padding: 5px 10px;
@@ -225,6 +228,13 @@ h4 {
   list-style: none;
   cursor: default;
   font-size: 1.2em;
+}
+
+.skills h4 {
+  font-weight: 200;
+  color: #031d25;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*CONTACT*/
@@ -257,17 +267,23 @@ h4 {
 }
 
 .contact button {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 30%;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 5px 10px;
   border: none;
-  color: #3498db;
+  color: #1c5275;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
+  justify-content: center;
+}
+
+.contact button:hover {
+  background: #1c5275;
+  color: #fff;
 }
 
 .white-text {
