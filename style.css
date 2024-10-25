@@ -18,6 +18,10 @@ body {
   justify-content: center;
 }
 
+.nav-links {
+  padding-top: 10px;
+}
+
 .navbar a {
   font-weight: 200;
   color: white;
@@ -28,6 +32,13 @@ body {
 .navbar a:hover {
   background-color: #0e2a3d;
   border-radius: 5px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }
 
 .anchor {
@@ -241,6 +252,7 @@ h4 {
   cursor: default;
   font-size: 1.2em;
   border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .skills h4 {
@@ -304,6 +316,15 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+  .jumbotron {
+    width: 100%;
+  }
+  .jumbotron-text h1 {
+    font-size: 2em;
+  }
+  .jumbotron-text p {
+    font-size: 20px;
+  }
   .main-content {
     flex: 0 0 90%;
   }
@@ -324,5 +345,36 @@ h4 {
   .contact button {
     width: 66%;
     height: 40px;
+  }
+  .nav-links {
+    display: none; /* Hide links by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #444;
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
+    font-size: 32px;
+    padding: 10px;
+  }
+
+  .menu-icon:hover {
+    background-color: #0e2a3d;
+    border-radius: 8px;
+  }
+
+  /* Display links when .open class is added */
+  .nav-links.open {
+    display: flex;
   }
 }
