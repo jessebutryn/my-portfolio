@@ -271,6 +271,7 @@ h4 {
 .contact {
   max-width: 500px;
   margin: 0 auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact input, .contact textarea {
@@ -304,6 +305,7 @@ h4 {
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
   justify-content: center;
+  cursor: pointer;
 }
 
 .contact button:hover {
